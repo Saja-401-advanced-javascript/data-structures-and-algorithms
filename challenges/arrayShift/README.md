@@ -1,5 +1,3 @@
-# data-structures-and-algorithms
-
 # Challenge Summary
 * Insert a value in the middle of a sorted array
 * Strech goal: removes an element from the middle index and shifts other elements in the array to fill the new gap.
