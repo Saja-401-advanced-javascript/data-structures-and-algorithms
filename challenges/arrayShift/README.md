@@ -1,11 +1,14 @@
 # Challenge Summary
-<!-- Short summary or background information -->
+* Insert a value in the middle of a sorted array
+* Strech goal: removes an element from the middle index and shifts other elements in the array to fill the new gap.
 
 ## Challenge Description
-<!-- Description of the challenge -->
+* Creat a function that pass a sorted array and a value and Insert tthe value in the middle of the array without using a build-in functions.
+* Strech goal: creat a function that pass an array andremoves an element from the middle index and shifts other elements in the array to fill the new gap without using a build-in functions.
+
 
 ## Approach & Efficiency
-<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+Writting two functions to reach the goals and testing them.
 
 ## Solution
-<!-- Embedded whiteboard image -->
+![](img/IMG_20200123_195726.jpg)
