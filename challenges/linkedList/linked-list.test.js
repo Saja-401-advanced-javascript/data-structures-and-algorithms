@@ -54,6 +54,38 @@ describe('Linked List', () => {
         expect(ll.toString()).toMatch("foo -> fuzz -> buzz -> NULL")
     });
 
-    
+    it('can insert a node before a node located in the middle of a liked list', () => {
+        ll.insert('foo');
+        ll.insert('fuzz');
+        ll.insert('buzz');
+        ll.insertBefore('fuzz', 'newValue')
+        expect(ll.toString()).toMatch(' foo -> newValue -> fuzz -> buzz -> NULL')
+    })
+
+    it('can insert a node before the first node of a liked list', () => {
+        ll.insert('foo');
+        ll.insert('fuzz');
+        ll.insert('buzz');
+        ll.insertBefore('foo', 'newValue')
+        expect(ll.toString()).toMatch('newValue -> foo -> fuzz -> buzz -> NULL')
+    })
+
+    it('can insert a node after a node located in the middle of a liked list', () => {
+        ll.insert('foo');
+        ll.insert('fuzz');
+        ll.insert('buzz');
+        ll.insertAfter('fuzz', 'newValue')
+        expect(ll.toString()).toMatch(' foo -> fuzz -> newValue -> buzz -> NULL')
+    })
+
+    it('can insert a node after a node located at the last node of a liked list', () => {
+        ll.insert('foo');
+        ll.insert('fuzz');
+        ll.insert('buzz');
+        ll.insertAfter('buzz', 'newValue')
+        expect(ll.toString()).toMatch(' foo -> fuzz -> buzz -> newValue -> NULL')
+    })
+
+
 
 })
