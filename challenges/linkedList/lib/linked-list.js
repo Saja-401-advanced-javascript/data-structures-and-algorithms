@@ -87,16 +87,36 @@ class LinkedList {
       currentNode = currentNode.next;
     }
   }
+
+
+  kthFromEnd(k) {
+    let currentNode = this.head;
+    let length = 0;
+
+    while (currentNode) {
+      length++;
+      currentNode = currentNode.next;
+    }
+
+    let demandedNode = length - 1 - k;
+    if (demandedNode < 0 || k < 0) {
+      return 'exception';
+    }
+
+    currentNode = this.head;
+
+    while (demandedNode > 0) {
+      demandedNode--;
+      currentNode = currentNode.next;
+    }
+
+    return currentNode.value;
+  }
 }
 
-const saja = new LinkedList();
 
-saja.insert(1);
-saja.insert(2);
-saja.insert(3);
-saja.insertBefore(2, 1.5);
 
-console.log('sad', saja.head);
+
 
 module.exports = LinkedList;
 

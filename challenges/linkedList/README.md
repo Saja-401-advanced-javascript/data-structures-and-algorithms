@@ -1,11 +1,11 @@
 # Challenge Summary
-to use linked list methods
+implement a new method on the linked list
 
 ## Challenge Description
-using inserBefore and insertAfter methods to add values before anf after selected value in the linked list. 
+to Write a method for the Linked List class which takes a number, k, as a parameter. Return the node’s value that is k from the end of the linked list. 
 
 ## Approach & Efficiency
-create two functions that implement the goals of the challenge
+writting the method then testing it
 
 ## Solution
 creat the functions then test them
