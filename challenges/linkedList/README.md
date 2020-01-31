@@ -17,6 +17,11 @@ use simple method to reach the goals of the challenge and testing them
 ## Solution
 creating the methods and testing them by running npm run test in the terminal.
 
+## efficiency (Big O):
+- **insert() method** : It is an O(1), a constant time operation, becouse the method adds an item to the beginning of the data structure.
+- **includes()** : It is an O(n)
+- **toString()** : It is an O(n)
+
 
 - [x] insert(val)
 - [x] includes(val)

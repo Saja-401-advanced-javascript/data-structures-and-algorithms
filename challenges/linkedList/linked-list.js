@@ -7,6 +7,7 @@ class Node {
     }
 }
 
+
 class LinkedList {
     constructor() {
         this.head = null
@@ -17,16 +18,18 @@ class LinkedList {
         let node = new Node(value);
 
         if (!this.head) {
-            this.head = node
+            this.head = node            
             return this
         }
 
         let currentNode = this.head;
         while (currentNode.next) {
+            
             currentNode = currentNode.next
         }
 
         currentNode.next = node;
+
         return this
     }
 
@@ -55,3 +58,4 @@ class LinkedList {
 
 
 module.exports = LinkedList
+
