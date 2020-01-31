@@ -9,3 +9,9 @@ writting the method then testing it
 
 ## Solution
 creat the functions then test them
+
+## Efficiency (Big O)
+- **ll.kthFromEnd(k)** : o(n)
+
+## Whiteboard 
+![](img/challenge-7.jpg)
