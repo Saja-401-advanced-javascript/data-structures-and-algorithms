@@ -9,3 +9,11 @@ create two functions that implement the goals of the challenge
 
 ## Solution
 creat the functions then test them
+
+##  efficiency (Big O) 
+- **append(value)** : o(1)
+- **insertBefore(value, newVal)** : o(1)
+- **insertAfter(value, newVal)** : o(n)
+
+## whiteboard
+![](img/challenge-06.jpg)

@@ -54,6 +54,23 @@ describe('Linked List', () => {
         expect(ll.toString()).toMatch("foo -> fuzz -> buzz -> NULL")
     });
 
+    it('Can successfully add a node to the end of the linked list', () => {
+        ll.insert('foo');
+        ll.insert('fuzz');
+        ll.insert('buzz');
+        ll.append('fuzz-buzz')
+        expect(ll.toString()).toMatch(' foo -> fuzz -> buzz -> fuzz-buzz -> NULL')
+    })
+
+    it('Can successfully add multiple nodes to the end of a linked list', () => {
+        ll.insert('foo');
+        ll.insert('fuzz');
+        ll.insert('buzz');
+        ll.append('fuzz-buzz')
+        ll.append('buzz-fuzz')
+        expect(ll.toString()).toMatch(' foo -> fuzz -> buzz -> fuzz-buzz -> buzz-fuzz -> NULL')
+    })
+
     it('can insert a node before a node located in the middle of a liked list', () => {
         ll.insert('foo');
         ll.insert('fuzz');
